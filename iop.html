@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>  
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <button class="btn btn-outline-info" data-filter="All">ALL</button>
+                <button class="btn btn-outline-info" data-filter="Flowers">Flowers</button>
+                <button class="btn btn-outline-info" data-filter="Mugs">Mugs</button>
+                <button class="btn btn-outline-info" data-filter="Watches">Watches</button>
+            </div>
+
+                <div class="col-md-3 Watches All">
+                    <div class="card text-left">
+                        <img class="card-img-top" src="https://cdn.pixabay.com/photo/2023/04/26/17/59/wrist-watch-7953062_640.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col-md-3 Watches All">
+                    <div class="card text-left">
+                        <img class="card-img-top" src="https://cdn.pixabay.com/photo/2023/11/16/10/26/casio-8392121_640.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col-md-3 Flowers All">
+                    <div class="card text-left">
+                        <img class="card-img-top" src="https://cdn.pixabay.com/photo/2023/10/30/05/19/sunflowers-8351807_640.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col-md-3 Flowers All">
+                    <div class="card text-left">
+                        <img class="card-img-top" src="https://cdn.pixabay.com/photo/2023/03/26/07/27/flower-7877708_640.jpg" alt="Card image cap" height="200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col-md-3 Mugs All">
+                    <div class="card text-left">
+                        <img class="card-img-top" src="https://cdn.pixabay.com/photo/2019/01/16/12/16/spawning-3935846_640.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col-md-3 Mugs All">
+                    <div class="card text-left">
+                        <img class="card-img-top" src="https://cdn.pixabay.com/photo/2019/01/16/12/16/spawning-3935846_640.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col-md-3 Mugs All">
+                    <div class="card text-left">
+                        <img class="card-img-top" src="https://cdn.pixabay.com/photo/2021/06/18/10/39/mug-6345796_640.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col-md-3 Flowers All">
+                    <div class="card text-left">
+                        <img class="card-img-top" src="https://cdn.pixabay.com/photo/2023/10/30/05/19/sunflowers-8351807_640.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 Watches All">
+                    <div class="card text-left">
+                        <img class="card-img-top" src="https://cdn.pixabay.com/photo/2016/11/29/13/39/analog-watch-1869928_640.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        
+        <script>
+            $(document).ready(function() {
+                $('.btn').click(function() {
+                    let Filter = $(this).attr('data-filter');
+                    if(Filter == "All") {
+                        $('.col-md-3').show(3000);
+                    }else{
+                        $('.col-md-3').not('.' + Filter).hide(3000);
+                        $('.col-md-3').filter('.' + Filter).show(3000);
+                    }
+                });
+            });
+        </script>
+</body>
+</html>
